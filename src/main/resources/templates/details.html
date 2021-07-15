@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+<!-- top navigation -->
+<div data-th-replace="fragments/menu"></div>
+<!-- /top navigation -->
+
+<!-- page content -->
+<div data-layout-fragment="content">
+    <div><b>Title:</b></div>
+    <div th:text="${game.isEmpty()} ? 'none' : ${game.get().title}"></div>
+
+    <div><b>Description:</b></div>
+    <div th:text="${game.isEmpty()} ? 'none' : ${game.get().description}"></div>
+</div>
+<!-- /page content -->
+
+</body>
+</html>

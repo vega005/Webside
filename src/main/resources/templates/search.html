@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/styles.css">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+</head>
+<body>
+
+
+<!-- top navigation -->
+<div data-th-replace="fragments/menu"></div>
+<!-- /top navigation -->
+
+<!-- page content -->
+<div data-layout-fragment="content">
+    <table>
+        <thead>
+        <tr>
+            <th> Title </th>
+            <th> Author </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:if="${games.empty}">
+            <td colspan="2"> No Games Found </td>
+        </tr>
+        <tr th:each="games : ${games}">
+            <td><a th:href="@{/details/{id}(id=${games.id})}" th:text="${games.title}"></a></td>
+            <td><span th:text="${games.description}"></span></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<!-- /page content -->
+
+</body>
+</html>

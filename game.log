@@ -1,0 +1,30 @@
+2021-07-15 15:45:36,049 INFO o.s.b.StartupInfoLogger [main] Starting ProjektApplication using Java 16 on VEGA-Komputer with PID 8344 (C:\Wazne dokumenty\JavaPrograms\Projekt\target\classes started by vega0 in C:\Wazne dokumenty\JavaPrograms\Projekt)
+2021-07-15 15:45:36,077 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.4.5, Spring v5.3.6
+2021-07-15 15:45:36,081 INFO o.s.b.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-07-15 15:45:37,800 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-15 15:45:37,909 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 86 ms. Found 1 JPA repository interfaces.
+2021-07-15 15:45:39,337 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2021-07-15 15:45:39,361 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2021-07-15 15:45:39,363 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2021-07-15 15:45:39,364 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-07-15 15:45:39,608 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2021-07-15 15:45:39,609 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3340 ms
+2021-07-15 15:45:39,733 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2021-07-15 15:45:40,072 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-07-15 15:45:40,083 INFO o.s.b.a.h.H2ConsoleAutoConfiguration [main] H2 console available at '/console'. Database available at 'jdbc:h2:mem:testdb'
+2021-07-15 15:45:40,427 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-15 15:45:40,544 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-07-15 15:45:40,823 INFO o.h.a.c.r.j.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-15 15:45:41,161 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-07-15 15:45:42,378 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-15 15:45:42,390 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-15 15:45:43,202 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-15 15:45:43,413 INFO o.s.s.c.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-15 15:45:43,583 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [main] Adding welcome page template: index
+2021-07-15 15:45:43,881 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2021-07-15 15:45:44,030 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-15 15:45:44,050 INFO o.s.b.StartupInfoLogger [main] Started ProjektApplication in 9.107 seconds (JVM running for 11.805)
+2021-07-15 15:45:56,202 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-15 15:45:56,203 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-07-15 15:45:56,207 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 4 ms
+2021-07-15 15:45:58,565 INFO c.e.P.HelloController [http-nio-8080-exec-2] go to details, id=5
