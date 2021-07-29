@@ -1,7 +1,5 @@
 package com.example.Projekt;
 
-import com.example.Projekt.GameItem;
-import com.example.Projekt.HelloController;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -30,19 +28,19 @@ public class HelloControllerTest {
 
     @Test
     public void contextLoads() throws Exception {
-        Assertions.assertThat(controller).isNotNull(); //sprawdzamy czy kontroler został utworzony i wstrzyknięty do testu
+        Assertions.assertThat(controller).isNotNull();
     }
 
     @Test
     public void findAll_ShouldAddTodoEntriesToModelAndRenderTodoListView() throws Exception {
 
-        MvcResult result = mockMvc.perform(get("/details/1")) // symulujemy wywołanie akcji wejścia w szczegóły gry
-                .andExpect(status().isOk()) //sprawdzamy czy status wywołania jest ok, czyli kod http = 200
-                .andExpect(view().name("details")) // sprawdzamy czy dostalismy przekierowanie na strone "details"
-                .andExpect(model().attribute("game", notNullValue()))// sprawdzamy czy do modelu został dodany obiekt gry "game"
+        MvcResult result = mockMvc.perform(get("/details/1"))
+                .andExpect(status().isOk())
+                .andExpect(view().name("details"))
+                .andExpect(model().attribute("game", notNullValue()))
                 .andReturn();
 
         Optional<GameItem> game = (Optional<GameItem>) result.getModelAndView().getModel().get("game");
-        Assertions.assertThat(game.get().getId()).isEqualTo(1L); // sprawdzamy czy nasz obiekt gry zwrócony w model na pewno ma Id = 1
+        Assertions.assertThat(game.get().getId()).isEqualTo(1L);
     }
 }
